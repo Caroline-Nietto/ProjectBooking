@@ -1,13 +1,17 @@
 
+import com.google.gson.Gson;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Date;
 
 import static org.hamcrest.Matchers.hasLength;
 import static org.hamcrest.Matchers.is;
@@ -176,6 +180,46 @@ public void testPingBooking(){
                 .log().all()
                 .statusCode(201)
         ;
+}
+
+// Usando Massa de Teste
+@ParameterizedTest
+@Order(8)
+@CsvFileSource(resources = "csv/massaBooking.csv", numLinesToSkip = 1, delimiter = ',')
+public void testCreateBookingCSV(
+    String firstname,
+    String lastname,
+    int totalprice,
+    boolean depositpaid,
+    String bookingdates__checkin,
+    String bookingdates__checkout,
+    String additionalneeds)
+{
+    String url = "https://restful-booker.herokuapp.com/booking";
+    Booking booking = new Booking();
+
+    booking.firstname = firstname;
+    booking.lastname = lastname;
+    booking.totalprice = totalprice;
+    booking.depositpaid = depositpaid;
+    booking.bookingdates__checkin = bookingdates__checkin;
+    booking.bookingdates__checkout = bookingdates__checkout;
+    booking.additionalneeds = additionalneeds;
+
+    Gson gson = new Gson();
+    String jsonBody = gson.toJson(booking);
+
+    given()
+            .log().all()
+            .contentType(ct)
+            .body(jsonBody)
+    .when()
+            .post(url)
+    .then()
+            .log().all()
+            .statusCode(200)
+
+    ;
 }
 
 }

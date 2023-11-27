@@ -1,0 +1,11 @@
+firstname,lastname,totalprice,depositpaid,bookingdates__checkin,bookingdates__checkout,additionalneeds
+Joaquim,Carlos,2000,True,2023-11-25,2023-12-25,Breakfast
+Maria,Silva,1500,False,2023-11-26,2023-12-26,Lunch
+Pedro,Oliveira,3000,True,2023-11-27,2023-12-27,Dinner
+Ana,Santos,1200,False,2023-11-28,2023-12-28,None
+Luiz,Costa,2500,True,2023-11-29,2023-12-29,Breakfast
+Larissa,Almeida,1800,False,2023-11-30,2023-12-30,Lunch
+Felipe,Pereira,3200,True,2023-12-01,2023-12-31,Dinner
+Camila,Gomes,1400,False,2023-12-02,2023-12-01,None
+Rafael,Mendes,2700,True,2023-12-03,2023-12-02,Breakfast
+Carolina,Rodrigues,2000,False,2023-12-04,2023-12-03,Lunch
