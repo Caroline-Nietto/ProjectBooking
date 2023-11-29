@@ -202,9 +202,9 @@ public void testCreateBookingCSV(
     booking.lastname = lastname;
     booking.totalprice = totalprice;
     booking.depositpaid = depositpaid;
-    booking.ckeckin = bookingdates__checkin;
-    booking.checkout = bookingdates__checkout;
     booking.additionalneeds = additionalneeds;
+
+    booking.bookingdates = new Booking.DATES(bookingdates__checkout, bookingdates__checkin);
 
     Gson gson = new Gson();
     String jsonBody = gson.toJson(booking);

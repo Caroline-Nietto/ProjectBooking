@@ -6,7 +6,7 @@ public class Booking {
     public int totalprice;
     public boolean depositpaid;
 
-    public DATES[] bookingdates;
+    public DATES bookingdates;
 
     public String ckeckin;
     public String checkout;
