@@ -202,8 +202,8 @@ public void testCreateBookingCSV(
     booking.lastname = lastname;
     booking.totalprice = totalprice;
     booking.depositpaid = depositpaid;
-    booking.bookingdates__checkin = bookingdates__checkin;
-    booking.bookingdates__checkout = bookingdates__checkout;
+    booking.ckeckin = bookingdates__checkin;
+    booking.checkout = bookingdates__checkout;
     booking.additionalneeds = additionalneeds;
 
     Gson gson = new Gson();

@@ -5,7 +5,23 @@ public class Booking {
     public String lastname;
     public int totalprice;
     public boolean depositpaid;
-    public String bookingdates__checkin;
-    public String bookingdates__checkout;
+
+    public DATES[] bookingdates;
+
+    public String ckeckin;
+    public String checkout;
+
+    public static class DATES {
+
+       private final String checkout;
+        private final String checkin;
+
+        DATES(String checkout, String checkin){
+            this.checkin = checkin;
+            this.checkout = checkout;
+        }
+    }
+
+
     public String additionalneeds;
 }
