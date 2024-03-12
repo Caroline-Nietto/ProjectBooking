@@ -8,11 +8,15 @@ Usei os métodos GET, PUT, POST, PATCH e DELETE, onde no método POST fiz um cre
 
 
 ***Ferramentas e Frameworks utilizados:***  
-IntelliJ IDEA  
+IntelliJ IDEA versão 2022.3.2 
 JUnit5  
 Rest-Assured  
 Linguagem: Java      
 
+
+Rodar o teste através do arquivo TestBooking.java:  
+    src/test/java/TestBooking.java  
+    
 
 Fico à disposição para esclarecimentos, troca de experiências e sugestões.  
 Um abraço.  
