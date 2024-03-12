@@ -1,4 +1,4 @@
-## AUTOMAÇÃO DE TESTE API REST
+## AUTOMAÇÃO DE TESTES API REST
 
 
 Olá, tudo bem?  
@@ -7,8 +7,11 @@ Neste modelo apresento a solução para os exercícios de Automação de Testes 
 Usei os métodos GET, PUT, POST, PATCH e DELETE, onde no método POST fiz um create simples e um create usando massa de teste.    
 
 
-*Ferramentas:*
-Utilizei o IntelliJ IDEA, JUnit5, Rest-Assured e linguagem Java.    
+***Ferramentas e Frameworks utilizados:***  
+IntelliJ IDEA  
+JUnit5  
+Rest-Assured  
+Linguagem: Java      
 
 
 Fico à disposição para esclarecimentos, troca de experiências e sugestões.  
