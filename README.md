@@ -1,4 +1,4 @@
-## AUTOMAÇÃO DE TESTES API REST
+## AUTOMAÇÃO DE TESTES API BOOKING
 
 
 Olá, tudo bem?  
