@@ -12,7 +12,7 @@ IntelliJ IDEA versão 2022.3.2
 Jdk versão 11.0.20  
 Maven  
 JUnit5  
-Rest-Assured  
+Rest-Assured versão 5.3.0   
 
 
 
